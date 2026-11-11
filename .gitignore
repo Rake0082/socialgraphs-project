@@ -1,0 +1,18 @@
+# macOS / editor
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+.vscode/
+
+# Hemmeligheder (API-tokens, cookies)
+.env
+*secret*
+*token*
+
+# Data og store genererede filer — hentes med kagglehub, gendannes ved at køre notebooken
+data/
+*.csv
+*.gexf
+*.zip
+*.parquet
+*.pkl
