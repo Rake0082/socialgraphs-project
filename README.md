@@ -5,6 +5,13 @@ Noder = opskrifter. Kant hvis to opskrifter deler ≥ 2 ingredienser og har Jacc
 
 Data: Kaggle `shuyangli94/food-com-recipes-and-user-interactions`, hentes automatisk med `kagglehub` i første celle. Data ligger ikke i git.
 
+## Notebooks
+
+1. `project_Rakel.ipynb`: preprocessing, opskriftsnetværket og communities. Gemmer de rensede data i `data/` (tager ca. 10 min).
+2. `reviews.ipynb`: anmeldelserne (ændringer og substitutioner). Indlæser data fra `data/`.
+
+`data/` ligger ikke i git. Kør `project_Rakel.ipynb` én gang (og igen, hvis preprocessingen ændres), før `reviews.ipynb`.
+
 ## Første gang
 
 ```bash

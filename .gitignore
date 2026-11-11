@@ -12,6 +12,7 @@ __pycache__/
 # Data og store genererede filer — hentes med kagglehub, gendannes ved at køre notebooken
 data/
 *.csv
+!labels/*.csv
 *.gexf
 *.zip
 *.parquet
