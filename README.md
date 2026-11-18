@@ -8,16 +8,17 @@ Data: Kaggle `shuyangli94/food-com-recipes-and-user-interactions`, hentes automa
 ## Notebooks
 
 1. `project_Rakel.ipynb`: preprocessing, opskriftsnetværket og communities. Gemmer de rensede data i `data/` (tager ca. 10 min).
-2. `reviews.ipynb`: anmeldelserne (ændringer og substitutioner). Indlæser data fra `data/`.
+2. `communities_check.ipynb`: tjek af communities med en anden metode (BERTopic på ingredienslisterne, NMI mod blandede labels). Indlæser data fra `data/` (ca. 1,5 min; første gang downloades en model på ca. 90 MB).
+3. `reviews.ipynb`: anmeldelserne (ændringer og substitutioner). Indlæser data fra `data/`.
 
-`data/` ligger ikke i git. Kør `project_Rakel.ipynb` én gang (og igen, hvis preprocessingen ændres), før `reviews.ipynb`.
+`data/` ligger ikke i git. Kør `project_Rakel.ipynb` én gang (og igen, hvis preprocessingen ændres), før de andre notebooks.
 
 ## Første gang
 
 ```bash
 git clone <repo-url>
 cd <repo>
-pip install nbstripout networkx pandas scikit-learn matplotlib igraph kagglehub pyarrow openpyxl
+pip install nbstripout networkx pandas scikit-learn matplotlib igraph kagglehub pyarrow openpyxl bertopic sentence-transformers
 nbstripout --install --attributes .gitattributes   # fjerner output fra notebooks ved commit
 ```
 
