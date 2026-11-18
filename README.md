@@ -17,7 +17,7 @@ Data: Kaggle `shuyangli94/food-com-recipes-and-user-interactions`, hentes automa
 ```bash
 git clone <repo-url>
 cd <repo>
-pip install nbstripout networkx pandas scikit-learn matplotlib igraph kagglehub
+pip install nbstripout networkx pandas scikit-learn matplotlib igraph kagglehub pyarrow openpyxl
 nbstripout --install --attributes .gitattributes   # fjerner output fra notebooks ved commit
 ```
 
