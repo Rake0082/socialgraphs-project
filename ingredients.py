@@ -161,10 +161,10 @@ def review_forms(vocabulary):
         return forms
 
     forms = {}
-    for name in vocabulary:
+    for name in sorted(vocabulary):                    # sorted, so the result is the same in every run
         for form in plurals(name):
             forms.setdefault(form, name)
-    for synonym, name in {**SYNONYMS, **REVIEW_SYNONYMS}.items():
+    for synonym, name in sorted({**SYNONYMS, **REVIEW_SYNONYMS}.items()):
         if name in vocabulary:                         # only synonyms that lead to one clean name
             for form in plurals(synonym):
                 forms.setdefault(form, name)
